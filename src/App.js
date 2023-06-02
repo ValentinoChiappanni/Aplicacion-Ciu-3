@@ -26,7 +26,7 @@ function App() {
             <Formulario agregarCliente={agregarCliente} />
           </Col>
           <Col>
-            <h2>Listado de usuarios</h2>
+            <h4>Listado de usuarios</h4>
             {clientes.map((cliente, index) => (
               <p key={index}>{cliente.nombre}</p>
             ))}
