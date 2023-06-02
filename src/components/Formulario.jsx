@@ -1,6 +1,7 @@
 import React, { Fragment, useState, } from "react";
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
+import { v4 as uuid } from 'uuid'
 
 export function Formulario() {
   // Creo un socio vacio y lo inicializo con un hook de estado
@@ -27,7 +28,6 @@ export function Formulario() {
   // 
   const submitForm = (e) => {
     e.preventDefault()
-    console.log("Enviado")
 
     if (nombre.trim() === '' || dni.trim() === '') {
       setError(true)
@@ -35,6 +35,10 @@ export function Formulario() {
     }
 
     setError(false)
+
+    socio.id = uuid()
+    console.log(socio)
+
   }
 
   return (
