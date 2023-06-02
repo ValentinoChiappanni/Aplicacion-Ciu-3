@@ -28,7 +28,9 @@ function App() {
           <Col>
             <h4>Listado de usuarios</h4>
             {clientes.map((cliente, index) => (
-              <p key={index}>{cliente.nombre}</p>
+              <p key={index}>
+                {cliente.nombre} {cliente.dni}
+              </p>
             ))}
           </Col>
         </Row>
