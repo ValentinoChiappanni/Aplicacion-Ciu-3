@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import { v4 as uuid } from 'uuid'
 
-export function Formulario() {
+export function Formulario({ agregarCliente }) {
   // Creo un socio vacio y lo inicializo con un hook de estado
   const [socio, editarSocio] = useState({
     nombre: "",
@@ -38,6 +38,14 @@ export function Formulario() {
 
     socio.id = uuid()
     console.log(socio)
+
+    agregarCliente(socio)
+
+
+    editarSocio({
+      nombre: '',
+      dni: ''
+    })
 
   }
 
