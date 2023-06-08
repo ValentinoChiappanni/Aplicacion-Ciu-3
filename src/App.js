@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import React, { Fragment, useState } from 'react';
 import { Formulario } from './components/Formulario';
