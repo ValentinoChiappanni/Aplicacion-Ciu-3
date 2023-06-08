@@ -3,12 +3,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Formulario } from './components/Formulario';
 import { Cliente } from './components/Cliente';
 
 function App() {
-  const [clientes, editarClientes] = useState([]);
+  // Iniciamos local storage
+  let clientesGuardados = JSON.parse(localStorage.getItem('clientes'));
+  if (!clientesGuardados) {
+    clientesGuardados = [];
+  }
+
+  const [clientes, editarClientes] = useState(clientesGuardados);
+
+  // Hook useEffect sirve para realizar algun cambio en alguna variable/hook/situcacion.
+  useEffect(() => {
+    // Algo cambio
+    clientesGuardados
+      ? localStorage.setItem('clientes', JSON.stringify(clientes))
+      : localStorage.setItem('clientes', JSON.stringify([]));
+  }, [clientesGuardados]);
 
   const agregarCliente = (socio) => {
     editarClientes([...clientes, socio]);
