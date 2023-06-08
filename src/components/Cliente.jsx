@@ -2,10 +2,10 @@ import React
 , { Fragment } from "react";
 
 
- export function Formulario(){
+ export function Cliente(){
     return (
         <Fragment>
-<h3>Aca van los clientes</h3>   
+<h3>Aca van los clientes</h3>    
         </Fragment>
     )
  }

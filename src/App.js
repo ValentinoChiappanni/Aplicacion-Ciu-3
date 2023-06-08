@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import React, { Fragment, useState } from 'react';
 import { Formulario } from './components/Formulario';
+import { Cliente } from './components/Cliente';
 
 function App() {
   const [clientes, editarClientes] = useState([]);
@@ -27,11 +28,7 @@ function App() {
           </Col>
           <Col>
             <h4>Listado de usuarios</h4>
-            {clientes.map((cliente, index) => (
-              <p key={index}>
-                {cliente.nombre} {cliente.dni}
-              </p>
-            ))}
+            <Cliente />
           </Col>
         </Row>
       </Container>
