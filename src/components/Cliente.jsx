@@ -1,5 +1,5 @@
 import React
-, { Fragment } from "react";
+, { Fragment } from "react"
 
 
  export function Cliente(){
