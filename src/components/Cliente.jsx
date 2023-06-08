@@ -1,9 +1,15 @@
 import React, { Fragment } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Badge } from 'react-bootstrap';
 
-export function Cliente() {
+export function Cliente({ cliente }) {
   return (
     <Fragment>
-      <h3>Aca van los clientes</h3>
+      <Badge variant="secondary">
+        <p>Nombre: {cliente.nombre}</p>
+        <p>DNI: {cliente.dni}</p>
+        <Button variant="light">Borrar</Button>
+      </Badge>
     </Fragment>
   );
 }

@@ -28,7 +28,9 @@ function App() {
           </Col>
           <Col>
             <h4>Listado de usuarios</h4>
-            <Cliente />
+            {clientes.map((cliente) => (
+              <Cliente cliente={cliente} key={cliente.id} />
+            ))}
           </Col>
         </Row>
       </Container>
