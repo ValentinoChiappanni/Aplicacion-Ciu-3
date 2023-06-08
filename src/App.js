@@ -14,6 +14,12 @@ function App() {
     editarClientes([...clientes, socio]);
   };
 
+  // Borrar cliente
+  const borrarCliente = (id) => {
+    const nuevosClientes = clientes.filter((cliente) => cliente.id !== id);
+    editarClientes(nuevosClientes);
+  };
+
   return (
     <Fragment>
       <Container>
@@ -27,9 +33,17 @@ function App() {
             <Formulario agregarCliente={agregarCliente} />
           </Col>
           <Col>
-            <h4>Listado de usuarios</h4>
+            {clientes.length > 0 ? (
+              <h4>Listado de clientes</h4>
+            ) : (
+              <h4>No hay clientes</h4>
+            )}
             {clientes.map((cliente) => (
-              <Cliente cliente={cliente} key={cliente.id} />
+              <Cliente
+                cliente={cliente}
+                key={cliente.id}
+                borrarCliente={borrarCliente}
+              />
             ))}
           </Col>
         </Row>
