@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Aplicacion-Ciu-3/static/css/main.30ea52ad.css",
-    "main.js": "/Aplicacion-Ciu-3/static/js/main.1ea8d327.js",
+    "main.css": "/Aplicacion-Ciu-3/static/css/main.e51bf4b3.css",
+    "main.js": "/Aplicacion-Ciu-3/static/js/main.e7364a73.js",
     "static/js/787.51b9cc1b.chunk.js": "/Aplicacion-Ciu-3/static/js/787.51b9cc1b.chunk.js",
     "index.html": "/Aplicacion-Ciu-3/index.html",
-    "main.30ea52ad.css.map": "/Aplicacion-Ciu-3/static/css/main.30ea52ad.css.map",
-    "main.1ea8d327.js.map": "/Aplicacion-Ciu-3/static/js/main.1ea8d327.js.map",
+    "main.e51bf4b3.css.map": "/Aplicacion-Ciu-3/static/css/main.e51bf4b3.css.map",
+    "main.e7364a73.js.map": "/Aplicacion-Ciu-3/static/js/main.e7364a73.js.map",
     "787.51b9cc1b.chunk.js.map": "/Aplicacion-Ciu-3/static/js/787.51b9cc1b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30ea52ad.css",
-    "static/js/main.1ea8d327.js"
+    "static/css/main.e51bf4b3.css",
+    "static/js/main.e7364a73.js"
   ]
 }
